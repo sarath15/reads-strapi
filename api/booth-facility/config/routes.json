@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/booth-facilities",
+      "handler": "booth-facility.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/booth-facilities/count",
+      "handler": "booth-facility.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/booth-facilities/:id",
+      "handler": "booth-facility.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/booth-facilities",
+      "handler": "booth-facility.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/booth-facilities/:id",
+      "handler": "booth-facility.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/booth-facilities/:id",
+      "handler": "booth-facility.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "booth_facilities",
+  "info": {
+    "name": "Booth facility"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "booth": {
+      "model": "booth",
+      "via": "booth_facility"
+    },
+    "Ramp_available": {
+      "type": "boolean",
+      "required": true
+    },
+    "Ramp_reconstruction_required": {
+      "type": "boolean"
+    },
+    "Weelchair_path": {
+      "type": "boolean",
+      "required": true
+    },
+    "Toilet_available": {
+      "type": "boolean",
+      "required": true
+    },
+    "Toilet_for_physically_challenged": {
+      "type": "boolean"
+    }
+  }
+}

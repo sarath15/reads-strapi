@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "booths",
+  "info": {
+    "name": "Booth"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "address": {
+      "type": "text"
+    },
+    "BoothNumber": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "booth_facility": {
+      "via": "booth",
+      "model": "booth-facility"
+    }
+  }
+}
